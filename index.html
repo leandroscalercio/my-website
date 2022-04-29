@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./assets/css/bars.css" />
+  <link rel="stylesheet" href="./assets/css/slider.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <link rel="shortcut icon" href="./assets/img/s-scalercio.png" type="image/x-icon" />
+  <title>Leandro Scalercio | Front-End</title>
+</head>
+
+<body id="home">
+  <div class="container-header">
+    <header class="header">
+      <a class="logo" href="http://www.leandroscalercio.dev.br"> <img src="./assets/img/scalercio.png"> </a>
+      <nav id="nav" class="navegacao">
+        <ul id="menu">
+          <li><a href="#me">Sobre Mim</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div id="arraste">
+    <img src="./assets/img/arrow_up.svg">
+    <span class="label-arraste"> arraste pra cima</span>
+  </div>
+
+  <main class="introducao">
+    <div class="imagem-introducao zoom">
+      <img id="me" src="/assets/img/eu.jpg" alt="" />
+    </div>
+    <div class="conteudo-introducao">
+      <h1>Eu, Leandro Scalercio Moreira ...</h1>
+
+      <p>Cristão, Carioca, Casado, Flamenguista e Pai da Beatrice!</p>
+      <br />
+      <p>
+        Sou <span>Formado</span> no curso de
+        <span>Análise e Desenvolvimento de Sistemas</span>, pela faculdade
+        <span><a href="https://projecao.br/faculdade" target="_blank">UniProjeção</a></span>.
+      </p>
+      <br />
+      <p>
+        Atualmente trabalho na
+        <span><a href="https://compass.uol/pt/" target="_blank">Compass.Uol</a></span> como desenvolvedor
+        Front-End,
+        utilizando <span>Typescript</span>,
+        <span>JavaScript</span> e o <span>Framework Angular</span>.
+      </p>
+      <br />
+      <p>
+        Estou iniciando uma Pós Graduação pela <span>PUCRS</span>, no curso de
+        <span>Desenvolvedor FullStack</span>.
+        <br />
+      </p>
+    </div>
+  </main>
+
+
+  <h2 class="titulos" id="skills"> Skills...</h2>
+
+  <section class="skills">
+    <div class="skill">
+      <div class="skill-name">HTML</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="90%" style="max-width:90%"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">CSS</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="90%" style="max-width:90%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Bootstrap</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="70%" style="max-width:70%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skills-2">
+        <div class="skill-name">Materialize</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="70%" style="max-width:70%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Angular</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="50%" style="max-width:50%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Javascript</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="50%" style="max-width:50%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">TypeScript</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="50%" style="max-width:50%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Git / GitHub / GitLab</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="80%" style="max-width:80%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Jira</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="70%" style="max-width:70%"></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <h2 class="titulos"> Certificados...</h2>
+  <section class="certificados">
+
+    <div class="certificados-slider">
+      <img class="slide" src="./assets/img/cert-web-designer.jpg">
+      <img class="slide" src="./assets/img/cert-css-grid.jpg">
+      <img class="slide" src="./assets/img/cert-flex-box.jpg">
+      <img class="slide" src="./assets/img/cert-js-jquery.jpg">
+      <img class="slide" src="./assets/img/cert-angular-c0d3r.jpg">
+
+
+
+    </div>
+
+    <div class="arrows">
+      <div id="arrow-prev" class="arrow"></div>
+      <div id="arrow-next" class="arrow"></div>
+    </div>
+
+
+
+  </section>
+
+  <h2 class="titulos" id="projetos"> projetos...</h2>
+
+  <section class="projetos introducao">
+
+    <div class="imagem-projetos zoom">
+      <a href="https://marianamachadonutri.com.br/" target="_blank" rel="noopener noreferrer"> <img
+          class="projeto-thumb" src="/assets/img/site-mari.jpg" alt="" /></a>
+    </div>
+
+    <div class="imagem-projetos zoom">
+      <a href="#home" target="_blank" rel="noopener noreferrer"> <img class="projeto-thumb"
+          src="/assets/img/scalercio-thumb.jpg" alt="" /></a>
+    </div>
+
+    <div class="imagem-projetos zoom">
+      <a href="#home" target="_blank" rel="noopener noreferrer"> <img class="projeto-thumb"
+          src="/assets/img/scalercio-thumb.jpg" alt="" /></a>
+    </div>
+
+    <div class="imagem-projetos zoom">
+      <a href="#home" target="_blank" rel="noopener noreferrer"> <img class="projeto-thumb"
+          src="/assets/img/scalercio-thumb.jpg" alt="" /></a>
+    </div>
+
+  </section>
+
+  <section class="contato">
+    <h2 class="titulos" id="contato"> Contato...</h2>
+    <div class="contato-logos">
+      <a href="https://www.linkedin.com/in/leandro-scalercio-moreira-74874a120/" target="_blank"> <img
+          src="./assets/img/linkedin-logo.svg"> </a>
+
+      <a id="git" href="https://github.com/leandroscalercio" target="_blank"> <img src="./assets/img/github-logo.svg">
+      </a>
+      <a href="malito:contato@leandroscalercio.dev.br" target="_blank" rel="noopener noreferrer"><img
+          src="./assets/img/email.svg"></a>
+
+
+    </div>
+
+  </section>
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

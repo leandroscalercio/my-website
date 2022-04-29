@@ -1,0 +1,288 @@
+h1,
+h2,
+p,
+a,
+a:visited ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+a:visited,
+a:active,
+a:link {
+  color: #ccc;
+}
+
+@keyframes pisca {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+body {
+  background-color: rgba(5, 3, 3, 0.8);
+  font-family: monospace;
+}
+
+span {
+  color: #ccc;
+  font-weight: bolder;
+}
+
+.container-header {
+  box-sizing: border-box;
+  max-width: 1150px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navegacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 300px;
+  height: 200px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.navegacao ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navegacao a {
+  display: block;
+  color: #f2bb62;
+  margin-right: 30px;
+  padding: 30px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.navegacao a:hover {
+  border-bottom: 1px solid #ccc;
+}
+
+.introducao {
+  max-width: 1150px;
+  display: flex;
+  margin: 60px auto;
+}
+
+.skill-container {
+  max-width: 1150px;
+  display: flex;
+  margin: 60px auto;
+  justify-content: space-between;
+}
+.skill-1 {
+  width: 50%;
+}
+.imagem-introducao,
+.conteudo-introducao {
+  padding: 30px;
+}
+
+.conteudo-introducao {
+  margin-left: 30px;
+}
+
+.imagem-introducao img {
+  filter: grayscale(0%);
+  border-radius: 20px 0px;
+  padding: 3px;
+  border: 1px solid #f2bb62;
+}
+.imagem-introducao img:hover {
+  filter: grayscale(0%);
+  border-radius: 20px 0px;
+  padding: 3px;
+  border: 1px solid #f2bb62;
+}
+.conteudo-introducao h1 {
+  color: #ccc;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.conteudo-introducao h1::after {
+  content: "|";
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca 0.7s infinite;
+}
+
+.conteudo-introducao p {
+  color: #f2bb62;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.imagem-introducao {
+  -webkit-box-shadow: 5px 5px 0px 0px #f2bb62, 10px 10px 0px 0px #ccc,
+    15px 15px 0px 0px #f2bb62, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 0px 0px #f2bb62, 10px 10px 0px 0px #ccc,
+    15px 15px 0px 0px #f2bb62, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  
+}
+
+.zoom img {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.zoom:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.titulos {
+  width: 100%;
+  max-width: 1150px;
+  margin: 60px auto;
+  font-size: 3rem;
+  color: #ccc;
+  text-transform: uppercase;
+}
+
+.titulos::after {
+  content: "|";
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca 0.7s infinite;
+}
+.projetos {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.projeto-thumb {
+  width: 400px;
+}
+
+.imagem-projetos {
+  margin: 30px;
+}
+
+.imagem-projetos {
+  -webkit-box-shadow: 5px 5px 0px 0px #f2bb62, 10px 10px 0px 0px #ccc,
+    15px 15px 0px 0px #f2bb62, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 0px 0px #f2bb62, 10px 10px 0px 0px #ccc,
+    15px 15px 0px 0px #f2bb62, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+      border-radius: 20px 0px;
+}
+
+.projeto-thumb {
+  border: 1px solid #f2bb62;
+  border-radius: 20px 0px;
+}
+
+.contato-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contato-logos img {
+  width: 150px;
+  margin: 30px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f2bb62;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  border-radius: 50px;
+
+  background: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #ccc;
+}
+
+#arraste{
+  display: none;
+}
+
+@media (max-width: 600px) {
+
+  #arraste{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #arraste img{
+    width: 80px;
+    height: 80px;
+  }
+
+  #menu{
+    display: none;
+  }
+
+  .header{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+  }
+
+  .logo{
+    height: 130px;
+  }
+
+  .introducao {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .imagem-introducao {
+    box-shadow: none;
+    margin: 0 auto;
+  }
+  .imagem-projetos {
+    margin: 30px auto;
+
+    box-shadow: none;
+  }
+  .contato-logos img {
+    width: 80px;
+    margin: 30px;
+  }
+  .conteudo-introducao{
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1023px) {
+  .certificados-slider .slide {
+    width: 70%;
+  }
+}
